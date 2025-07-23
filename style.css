@@ -334,3 +334,9 @@ footer {
     gap: 10px;
   }
 }
+@media (max-width: 600px) {
+  .marquee-container img {
+    margin: 10px 5px;
+    height: 120px;
+  }
+}
