@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiXpose – Digital Marketing Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-text">DigiXpose</div>
+      <nav class="nav-bar">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="typing-text" id="hero-heading"></h1>
+    <p class="animated-subtext">Your success story begins with DigiXpose</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2 class="animated-heading">Our Services</h2>
+    <div class="services">
+      <div class="card"><h3>Social Media Marketing</h3><p>Boost your online presence across platforms with tailored strategies.</p></div>
+      <div class="card"><h3>Graphic Design</h3><p>Engaging and original creatives for your brand and campaigns.</p></div>
+      <div class="card"><h3>Video Editing</h3><p>Professional reels, promos & edits that capture attention.</p></div>
+      <div class="card"><h3>Brand Identity</h3><p>Create a consistent and compelling brand image across media.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2 class="animated-heading">Our Work</h2>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <!-- Repeat images to simulate infinite scroll -->
+        <img src="images/work1.jpg" alt="Work" />
+        <img src="images/work2.jpg" alt="Work" />
+        <img src="images/work3.jpg" alt="Work" />
+        <img src="images/work4.jpg" alt="Work" />
+        <img src="images/work5.jpg" alt="Work" />
+        <img src="images/work6.jpg" alt="Work" />
+        <img src="images/work7.jpg" alt="Work" />
+        <img src="images/work8.jpg" alt="Work" />
+        <img src="images/work9.jpg" alt="Work" />
+        <img src="images/work10.jpg" alt="Work" />
+        <img src="images/work1.jpg" alt="Work" />
+        <img src="images/work2.jpg" alt="Work" />
+        <img src="images/work3.jpg" alt="Work" />
+        <img src="images/work4.jpg" alt="Work" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="animated-heading">About Us</h2>
+    <div class="about-box">
+      <p>
+        <strong>Where Creativity Meets Strategy.</strong><br /><br />
+        At <span style="color:#ff6cf2">DigiXpose</span>, we bring your ideas to life through powerful design, engaging content, and smart digital strategies.<br /><br />
+        We specialize in graphic design, video editing, social media management, and branding — all under one roof. Our mission is simple: to help you stand out online with visuals that captivate and campaigns that convert.<br /><br />
+        Whether you're a brand, startup, or creator — we're here to elevate your digital presence.
+      </p>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <h2 class="animated-heading">Contact Us</h2>
+    <div class="contact-cards">
+      <a href="mailto:thedigixpose@gmail.com" class="contact-card" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/gmail.png" alt="Email" />
+        <span>thedigixpose@gmail.com</span>
+      </a>
+      <a href="https://instagram.com/thedigixpose" class="contact-card" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" />
+        <span>@thedigixpose</span>
+      </a>
+      <a href="tel:+919876543210" class="contact-card" target="_blank">
+        <img src="https://img.icons8.com/fluency/48/phone.png" alt="Phone" />
+        <span>+91 9876543210</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Take Your Brand Higher?</h2>
+    <button onclick="document.getElementById('popup-form').style.display='flex'">Let’s Work Together</button>
+  </section>
+
+  <div class="form-popup" id="popup-form">
+    <form action="https://formsubmit.co/thedigixpose@gmail.com" method="POST" class="popup-form-content">
+      <h3>Tell Us About Your Project</h3>
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Work_Needed" placeholder="What service do you need?" rows="4" required></textarea>
+      <button type="submit">Send</button>
+      <button type="button" onclick="document.getElementById('popup-form').style.display='none'">Close</button>
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_next" value="https://thankyou.thedigixpose.com" />
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DigiXpose. All rights reserved.</p>
+  </footer>
+</body>
+</html>
